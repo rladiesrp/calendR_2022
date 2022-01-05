@@ -23,7 +23,7 @@ events[27] <- "27 - [RLadies RTP] #tidytuesday Work Group"
 
 # Creating the calendar with a legend
 png(file = "rladies_calendar_jan2022.png", width = 1024, height = 768)
-rladies_jan<-calendR(month=1, 
+rladies<-calendR(month=1, 
                  weeknames = c("Mon", "Tue", "Wed", "Thu", 
                                 "Fri", "Sat","Sun"),   
                  weeknames.size = 6,
@@ -38,7 +38,7 @@ library(ggplot2)
 library(png)
 library(patchwork)    
 my_image <- readPNG("rladies_global_logo.png", native = TRUE)
-rladies_jan+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia] My Data Science Learning Journey"="magenta3", 
+rladies+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia] My Data Science Learning Journey"="magenta3", 
                                    "8 - [RLadies Natal] Regressão Linear"="hotpink",	
                                    "12 - [RLadies New York] Package Development Workshop (Day 1) - Your First Package"="plum", 
                                    "13 - [RLadies New York] Package Development Workshop (Day 2) - Package Documentation and 
