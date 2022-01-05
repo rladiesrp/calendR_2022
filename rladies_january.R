@@ -21,7 +21,7 @@ events[25] <- "25 - [RLadies Gaborone] R packages for data cleaning and
 events[26] <- "26 - [RLadies Coventry] How to unlock Twitter's hidden meta data: An introduction to the rtweet package"
 events[27] <- "27 - [RLadies RTP] #tidytuesday Work Group"
 
-# Creating the calendar with a legend
+# Creating the calendar
 png(file = "rladies_calendar_jan2022.png", width = 1024, height = 768)
 rladies<-calendR(month=1, 
                  weeknames = c("Mon", "Tue", "Wed", "Thu", 
@@ -34,6 +34,7 @@ rladies<-calendR(month=1,
                  special.col = 1:11,
                  legend.pos = "right")
 
+# Creating a legend
 library(ggplot2)
 library(png)
 library(patchwork)    
@@ -60,7 +61,7 @@ rladies+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia
   Source: www.meetup.com/pro/rladies
        Created by @fblpalmeira") +
 
-                   # Combine plot & image
+# Combine plot & image
   inset_element(p = my_image,
                 left = 0.8,
                 bottom = 0.8,
