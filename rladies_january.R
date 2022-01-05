@@ -6,10 +6,10 @@ events <- rep(NA, 31)
 
 # Set the corresponding events
 events[6] <- "6 - [RLadies Urmia] My Data Science Learning Journey"
-events[8] <- "8 - [RLadies Natal] Regressão Linear"
+events[8] <- "8 - [RLadies Natal] RegressÃ£o Linear"
 events[12] <- "12 - [RLadies New York] Package Development Workshop (Day 1) - Your First Package"
 events[13] <- "13 - [RLadies New York] Package Development Workshop (Day 2) - Package Documentation and 
-[RLadies Cuernavaca] Introducción a R y RStudio" 
+[RLadies Cuernavaca] IntroducciÃ³n a R y RStudio" 
 events[18] <- "18 - [RLadies Philly] Resolutions 2022!"
 events[19] <- "19 - [RLadies Seattle] Reactor x PNW Tech Community Networking"
 events[20] <- "20 - [RLadies Vancouver] Git/Github workshop and 
@@ -22,8 +22,8 @@ events[26] <- "26 - [RLadies Coventry] How to unlock Twitter's hidden meta data:
 events[27] <- "27 - [RLadies RTP] #tidytuesday Work Group"
 
 # Creating the calendar with a legend
-png(file = "rladies_calendar_jan2022_v2.png", width = 1024, height = 768)
-rladies<-calendR(month=1, 
+png(file = "rladies_calendar_jan2022.png", width = 1024, height = 768)
+rladies_jan<-calendR(month=1, 
                  weeknames = c("Mon", "Tue", "Wed", "Thu", 
                                 "Fri", "Sat","Sun"),   
                  weeknames.size = 6,
@@ -34,15 +34,15 @@ rladies<-calendR(month=1,
                  special.col = 1:11,
                  legend.pos = "right")
 
-#library(ggplot2)
-#library("png")
-#library("patchwork")    
+library(ggplot2)
+library(png)
+library(patchwork)    
 my_image <- readPNG("rladies_global_logo.png", native = TRUE)
-rladies+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia] My Data Science Learning Journey"="magenta3", 
-                                   "8 - [RLadies Natal] Regressão Linear"="hotpink",	
+rladies_jan+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia] My Data Science Learning Journey"="magenta3", 
+                                   "8 - [RLadies Natal] RegressÃ£o Linear"="hotpink",	
                                    "12 - [RLadies New York] Package Development Workshop (Day 1) - Your First Package"="plum", 
                                    "13 - [RLadies New York] Package Development Workshop (Day 2) - Package Documentation and 
-[RLadies Cuernavaca] Introducción a R y RStudio"="pink",
+[RLadies Cuernavaca] IntroducciÃ³n a R y RStudio"="pink",
                                    "18 - [RLadies Philly] Resolutions 2022!"="violetred", 
                                    "19 - [RLadies Seattle] Reactor x PNW Tech Community Networking"="orchid",
                                    "20 - [RLadies Vancouver] Git/Github workshop and 
@@ -69,23 +69,3 @@ rladies+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia
 
 dev.off()
   
-##################
-
-          calendR(month = 1,      
-                  mbg.col = 2,           # Background color for the month names
-                  months.col = "white",
-                  title.col = "purple",  
-                  col = "purple",
-                  weeknames.col = "purple", 
-                  special.days = c(6,8,12,13,18,19,20,22,25,26,27),
-                  special.col = "pink",
-                  text = c("RLadies Urmia", "RLadies Natal",	
-                          "RLadies New York", "RLadies New York\nRLadies Cuernavaca",
-                          "RLadies Philly", "RLadies Seattle",
-                          "RLadies Vancouver", "RLadies Abuja", "RLadies Gaborone\nRLadies Baltimore and Washington DC\nRLadies Bucharest", 
-                          "RLadies Coventry", "RLadies RTP"), 
-                  text.pos = c(6,8,12,13,18,19,20,22,25,26,27),       # Days of the month where to put the texts 
-                  text.size = 2.5,               # Font size of the text
-                  text.col = "purple",
-                  days.col = 6,
-                  bg.img = "rladiesrp.png")     
