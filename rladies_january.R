@@ -53,19 +53,20 @@ rladies+scale_fill_manual(name = "Rladies Meetups", values=c("6 - [RLadies Urmia
 [RLadies Bucharest] Build a new habit in 2022"="purple", 
                                    "26 - [RLadies Coventry] How to unlock Twitter's hidden meta data: An introduction to the rtweet package"="lightpink", 
                                    "27 - [RLadies RTP] #tidytuesday Work Group"="plum4"))+
-  theme(legend.key.size = unit(1, units = "cm"), # Keys size
+  theme(legend.key.size = unit(1, units = "cm"), 
         legend.text = element_text(size = 11),
         legend.title = element_text(size=20)) +
   labs(caption="* All events will be virtual or hybrid, except RLadies Montreal and RLadies Abuja
   Source: www.meetup.com/pro/rladies
        Created by @fblpalmeira") +
+
                    # Combine plot & image
   inset_element(p = my_image,
                 left = 0.8,
                 bottom = 0.8,
                 right = 0.95,
                 top = 0.95,
-                align_to = "full")# Text size
+                align_to = "full")
 
 dev.off()
   
