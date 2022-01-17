@@ -32,7 +32,7 @@ events[27] <- "27 - [RLadies RTP] #tidytuesday Work Group and
 events[28] <- "28 - [RLadies Chennai] Data analysis using the dplyr package"
 
 # Creating the calendar
-png(file = "rladies_calendar_jan2022.png", width = 1024, height = 768)
+png(file = "rladies_calendar_jan2022_v2.png", width = 1024, height = 768)
 rladies<-calendR(month=1, 
                  weeknames = c("Mon", "Tue", "Wed", "Thu", 
                                 "Fri", "Sat","Sun"),   
