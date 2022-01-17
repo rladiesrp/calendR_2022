@@ -1,4 +1,4 @@
-#library(calendR)
+library(calendR)
 Sys.setlocale("LC_ALL", "English")
 
 # Vector of NA of the same length of the number of days of the year
@@ -32,7 +32,7 @@ events[27] <- "27 - [RLadies RTP] #tidytuesday Work Group and
 events[28] <- "28 - [RLadies Chennai] Data analysis using the dplyr package"
 
 # Creating the calendar
-png(file = "rladies_calendar_jan2022_v2.png", width = 1024, height = 768)
+png(file = "rladies_calendar_jan2022.png", width = 1024, height = 768)
 rladies<-calendR(month=1, 
                  weeknames = c("Mon", "Tue", "Wed", "Thu", 
                                 "Fri", "Sat","Sun"),   
@@ -44,9 +44,9 @@ rladies<-calendR(month=1,
                  special.col = 1:14,
                  legend.pos = "right")
 
-#library(ggplot2)
-#library(png)
-#library(patchwork)    
+library(ggplot2)
+library(png)
+library(patchwork)    
 my_image <- readPNG("rladiesglobal_logo.png", native = TRUE)
 rladies+scale_fill_manual(name = "Rladies Meetups - January 2022", values=c(
                                    "6 - [RLadies Urmia] My Data Science Learning Journey"="magenta3", 
@@ -90,24 +90,3 @@ rladies+scale_fill_manual(name = "Rladies Meetups - January 2022", values=c(
 
 dev.off()
   
-##################
-
-          calendR(month = 1,      
-                  mbg.col = 2,           # Background color for the month names
-                  months.col = "white",
-                  title.col = "purple",  
-                  col = "purple",
-                  weeknames.col = "purple", 
-                  special.days = c(6,8,12,13,18,19,20,22,25,26,27),
-                  special.col = "pink",
-                  text = c("RLadies Urmia", "RLadies Natal",	
-                          "RLadies New York", "RLadies New York\nRLadies Cuernavaca",
-                          "RLadies Philly", "RLadies Seattle",
-                          "RLadies Vancouver", "RLadies Abuja", "RLadies Gaborone\nRLadies Baltimore and Washington DC\nRLadies Bucharest", 
-                          "RLadies Coventry", "RLadies RTP"), 
-                  text.pos = c(6,8,12,13,18,19,20,22,25,26,27),       # Days of the month where to put the texts 
-                  text.size = 2.5,               # Font size of the text
-                  text.col = "purple",
-                  days.col = 6,
-                  bg.img = "rladiesrp.png")     
-
