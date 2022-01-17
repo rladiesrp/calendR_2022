@@ -1,6 +1,8 @@
 # RLadies Global Calendar - January 2022
 
-Source: [RLadies Global Meetup](https://www.meetup.com/pt-BR/pro/rladies)
+Dear community, we created a customized calendar on upcoming events happening at RLadies Chapters this month. More events coming soon. Stay tuned!
+<img src="rladies_calendar_jan2022_v2.png">
 
 Created by [@fblpalmeira](https://twitter.com/fblpalmeira)
-<img src="rladies_calendar_jan2022_v2.png">
+
+Source: [RLadies Global Meetup](https://www.meetup.com/pt-BR/pro/rladies)
