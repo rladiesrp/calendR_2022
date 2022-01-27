@@ -84,7 +84,7 @@ rladies+scale_fill_manual(name = "Rladies Meetups - January 2022", values=c(
 [RLadies East Lansing] Accessible DataViz"="lightpink"))+
   
   theme(legend.key.size = unit(1, units = "cm"), # Keys size
-        legend.text = element_text(size =16),
+        legend.text = element_text(size =11),
         legend.title = element_text(size=20)) +
   labs(caption="Source: www.meetup.com/pro/rladies
        Created by @fblpalmeira") +
