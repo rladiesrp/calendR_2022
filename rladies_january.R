@@ -1,7 +1,7 @@
 library(calendR)
 Sys.setlocale("LC_ALL", "English")
 
-# Vector of NA of the same length of the number of days of the year
+# Vector of NA of the same length of the number of days of the month or year
 events <- rep(NA, 31)
 
 # Set the corresponding events
