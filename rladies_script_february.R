@@ -73,5 +73,3 @@ rladies+scale_fill_manual(name = "February 2022", values=c(
                 align_to = "full")# Text size
 
 dev.off()
-
-##################
