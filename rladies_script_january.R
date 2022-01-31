@@ -97,4 +97,3 @@ rladies+scale_fill_manual(name = "Rladies Meetups - January 2022", values=c(
                 align_to = "full")# Text size
 
 dev.off()
-  
