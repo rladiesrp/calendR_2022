@@ -7,7 +7,7 @@ Created by [@fblpalmeira](https://twitter.com/fblpalmeira)
 Source: [RLadies Global Meetup](https://www.meetup.com/pro/rladies)
 
 # March
-<img src="rladies_calendar_march2022_v1.png">
+<img src="rladies_calendar_mar2022_v1.png">
 
 # February
 <img src="rladies_calendar_feb2022_v1.png">
