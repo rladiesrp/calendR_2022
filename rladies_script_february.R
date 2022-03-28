@@ -60,7 +60,7 @@ rladies+scale_fill_manual(name = "February 2022", values=c(
   "25 - [RLadies Queretaro] Mapas por desagregaciones geográficas de México"="hotpink"))+
   
   theme(legend.key.size = unit(1, units = "cm"), # Keys size
-        legend.text = element_text(size =12.5),
+        legend.text = element_text(size =11),
         legend.title = element_text(size=20)) +
   labs(caption="Source: www.meetup.com/pro/rladies
        Created by @fblpalmeira") +
