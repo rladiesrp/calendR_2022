@@ -6,10 +6,10 @@ events <- rep(NA, 30)
 
 # Set the corresponding events
 events[1] <- "1 - [RLadies Cologne] R for Bioinformatics: Analyses and challenges of RNA-seq data"
-events[2] <- "2 - [RLadies Salvador] Dando adeus ao Shiny App padrão: themes e shinyWidgets" 
+events[2] <- "2 - [RLadies Salvador] Dando adeus ao Shiny App padrÃ£o: themes e shinyWidgets" 
 events[3] <- "3 - [RLadies San Diego] Data Science Hackathon"
 events[5] <- "5 - [RLadies Guayaquil] Women in Data Science Ecuador 2022
-[RLadies Madrid] RLadies + Kairós"
+[RLadies Madrid] RLadies + KairÃ³s"
 events[6] <- "6 - [RLadies St. Louis] Getting Started with Spatial Data"
 events[7] <- "7 - [RLadies Bariloche] Grupo 3. Taller de Estudio Libro R para Ciencia de Datos
 [RLadies Freiburg] Our first data dashboard: Interactive plots with Shiny!
@@ -32,7 +32,7 @@ rladies<-calendR(month=4,
                  days.col = "black",
                  lty = 1,                   
                  special.days = events,
-                 special.col = 1:13,
+                 special.col = 1:12,
                  legend.pos = "right")
 
 library(ggplot2)
@@ -41,10 +41,10 @@ library(patchwork)
 
 rladies+scale_fill_manual(name = "April 2022", values=c(
   "1 - [RLadies Cologne] R for Bioinformatics: Analyses and challenges of RNA-seq data"="magenta3",
-  "2 - [RLadies Salvador] Dando adeus ao Shiny App padrão: themes e shinyWidgets"="hotpink", 
+  "2 - [RLadies Salvador] Dando adeus ao Shiny App padrÃ£o: themes e shinyWidgets"="hotpink", 
   "3 - [RLadies San Diego] Data Science Hackathon"="violetred",
   "5 - [RLadies Guayaquil] Women in Data Science Ecuador 2022
-[RLadies Madrid] RLadies + Kairós"="plum",
+[RLadies Madrid] RLadies + KairÃ³s"="plum",
   "6 - [RLadies St. Louis] Getting Started with Spatial Data"="purple",
   "7 - [RLadies Bariloche] Grupo 3. Taller de Estudio Libro R para Ciencia de Datos
 [RLadies Freiburg] Our first data dashboard: Interactive plots with Shiny!
