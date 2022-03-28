@@ -7,7 +7,7 @@ events <- rep(NA, 31)
 # Set the corresponding events
 events[3] <- "3 - [RLadies Remote] Coffee Chat
 [RLadies Gaborone] R for Data Science"
-events[5] <- "5 - [RLadies Goiânia] Introdução ao RBio e Experimentos" 
+events[5] <- "5 - [RLadies GoiÃ¢nia] IntroduÃ§Ã£o ao RBio e Experimentos" 
 events[8] <- "8 - [RLadies Sydney] Show and Tell your R Code"
 events[10] <- "10 - [RLadies Bariloche] Grupo 3. Taller de Estudio Libro R para Ciencia de Datos
 [RLadies New Orleans] Pick Your Package: Data Visualization in R
@@ -28,7 +28,7 @@ events[24] <- "24 - [RLadies Baltimore] How to use R with Excel (Virtual)
 events[25] <- "25 - [RLadies Gaborone] An Introduction to R Shiny
 [RLadies Chennai] - Classification and Regression Trees"
 events[26] <- "26 - [RLadies Puebla] SagemakeR: Machine Learning en R
-[RLadies Guadalajara] - Modelos de series de tiempo aplicados a indicadores de género
+[RLadies Guadalajara] - Modelos de series de tiempo aplicados a indicadores de gÃ©nero
 [RLadies Lagos] - Data Network Analysis : What to know"
 events[30] <- "30 - [RLadies Washington D.C.] Data Science Program Open House with Georgetown University
 [RLadies Philly] 2022 Datathon Conclusion"
@@ -54,7 +54,7 @@ library(patchwork)
 rladies+scale_fill_manual(name = "March 2022", values=c(
 "3 - [RLadies Remote] Coffee Chat
 [RLadies Gaborone] R for Data Science"="magenta3",
-"5 - [RLadies Goiânia] Introdução ao RBio e Experimentos"="hotpink", 
+"5 - [RLadies GoiÃ¢nia] IntroduÃ§Ã£o ao RBio e Experimentos"="hotpink", 
 "8 - [RLadies Sydney] Show and Tell your R Code"="purple",
 "10 - [RLadies Bariloche] Grupo 3. Taller de Estudio Libro R para Ciencia de Datos
 [RLadies New Orleans] Pick Your Package: Data Visualization in R
@@ -75,14 +75,14 @@ rladies+scale_fill_manual(name = "March 2022", values=c(
 "25 - [RLadies Gaborone] An Introduction to R Shiny
 [RLadies Chennai] - Classification and Regression Trees"="orchid",
 "26 - [RLadies Puebla] SagemakeR: Machine Learning en R
-[RLadies Guadalajara] - Modelos de series de tiempo aplicados a indicadores de género
+[RLadies Guadalajara] - Modelos de series de tiempo aplicados a indicadores de gÃ©nero
 [RLadies Lagos] - Data Network Analysis : What to know"="purple",
 "30 - [RLadies Washington D.C.] Data Science Program Open House with Georgetown University
 [RLadies Philly] 2022 Datathon Conclusion"="violetred",
 "31 - [RLadies Bari] The typical working day of a BI manager"="plum3"))+
   
   theme(legend.key.size = unit(1, units = "cm"), # Keys size
-        legend.text = element_text(size =14),
+        legend.text = element_text(size =11),
         legend.title = element_text(size=20)) +
   labs(caption="Source: www.meetup.com/pro/rladies
        Created by @fblpalmeira")
